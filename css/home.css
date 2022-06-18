@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway",
+        sans-serif;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-intro {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 50%;
+}
+
+.main-intro h1 {
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.main-intro p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.main-btn {
+    top: 30px;
+    position: relative;
+    background: #41BF78;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.main-btn:hover {
+    background: #D92332;
+    color: #fff;
+    letter-spacing: .25rem;
+    box-shadow: 0 0 35px #D92332;
+}
+
+.main-btn::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+}
+
+.main-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.main-btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.main-btn i::before {
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid #D92332;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.main-btn:hover i::before {
+    left: 20%;
+    width: 10px;
+    border: 2px solid #41BF78;
+}
+
+.main-btn i::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid #D92332;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.main-btn:hover i::after {
+    left: 80%;
+    width: 10px;
+    border: 2px solid #41BF78;
+}
